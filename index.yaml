@@ -15,4 +15,42 @@ entries:
     urls:
     - https://github.com/lablabs/helm-chart-template/releases/download/chart-name-0.1.0/chart-name-0.1.0.tgz
     version: 0.1.0
-generated: "2023-06-07T12:22:50.352654022Z"
+  memcached:
+  - annotations:
+      category: Infrastructure
+      images: |
+        - name: memcached
+          image: docker.io/bitnami/memcached:1.6.28-debian-12-r0
+        - name: memcached-exporter
+          image: docker.io/bitnami/memcached-exporter:0.14.3-debian-12-r7
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:12-debian-12-r22
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 1.6.28
+    created: "2025-08-25T12:33:52.961769024Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Memcached is an high-performance, distributed memory object caching
+      system, generic in nature, but intended for use in speeding up dynamic web applications
+      by alleviating database load.
+    digest: be91d25674b80f190a28e2b27f5dc94ce9b33039e08b3cbd34822c755dc527f1
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/memcached/img/memcached-stack-220x234.png
+    keywords:
+    - memcached
+    - cache
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: memcached
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/memcached
+    urls:
+    - https://github.com/lablabs/bitnami-memcached-helm-chart/releases/download/memcached-7.4.2/memcached-7.4.2.tgz
+    version: 7.4.2
+generated: "2025-08-25T12:33:52.961785916Z"
