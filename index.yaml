@@ -17,6 +17,32 @@ entries:
     version: 0.1.0
   memcached:
   - annotations:
+      images: |
+        - name: memcached
+          image: docker.io/bitnami/memcached:1.6.39-debian-12-r0
+        - name: memcached-exporter
+          image: docker.io/bitnami/memcached-exporter:0.15.3-debian-12-r5
+        - name: busybox
+          image: docker.io/thanos/busybox:1.37.0
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 1.6.39
+    created: "2025-08-25T13:26:25.997097243Z"
+    dependencies:
+    - name: common
+      repository: https://lablabs.github.io/bitnami-common-helm-chart/
+      version: 2.31.4
+    description: Memcached is an high-performance, distributed memory object caching
+      system, generic in nature, but intended for use in speeding up dynamic web applications
+      by alleviating database load.
+    digest: 1214569f9eabfd92f8a9c9a9be2ddd7c9fc47901318908483cdbde1b2ee0bb83
+    keywords:
+    - memcached
+    name: memcached
+    urls:
+    - https://github.com/lablabs/bitnami-memcached-helm-chart/releases/download/memcached-7.9.7/memcached-7.9.7.tgz
+    version: 7.9.7
+  - annotations:
       category: Infrastructure
       images: |
         - name: memcached
@@ -53,4 +79,4 @@ entries:
     urls:
     - https://github.com/lablabs/bitnami-memcached-helm-chart/releases/download/memcached-7.4.2/memcached-7.4.2.tgz
     version: 7.4.2
-generated: "2025-08-25T12:33:52.961785916Z"
+generated: "2025-08-25T13:26:25.99711185Z"
